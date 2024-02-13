@@ -1,0 +1,127 @@
+body{
+    background: no-repeat url(../img/FonVector.jpg) ;
+    /* position: absolute; */
+    /* min-height: 100%;
+    min-width: auto; */
+}
+.adaptiv{
+    display: block;
+    justify-content: center;
+}
+.header{
+    width: 40vw;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    
+    border: black 0.5vw solid;
+    
+}
+/*
+DESCTOP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+@media (hover:hover) and (pointer: fine) {
+    body{
+        background-size: cover;
+    }
+    
+    .header{
+        margin-top: 3vh;
+        margin-left: 0.5vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: solid black 0.5vw;
+    }
+    .logo{
+        width: 10vw;
+        height: auto;
+    }
+    .box-item-2{
+        margin-right: 1.5vw;
+    }
+    .box-item-1{
+        border-radius: 50%;
+        
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        border: black 0.5vw solid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*
+MOBILE*************************************************************************
+*/
+@media (hover: none) and (pointer: coarse){
+    body{
+        /* -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%; */
+        background-size:100vw 100vh;
+    }
+    .adaptiv{
+        border: black 0.5vw solid;
+        height: 34vh;
+        
+    }
+    
+    .header{
+        /* margin-top: 3vh;
+        margin-left: 0.5vw; */
+        display: flex;
+        margin-left: 15vw;
+        justify-content: flex-start;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .logo{
+        width: 30vw;
+        height: auto;
+    }
+    .box-item-2{
+        margin-right: 10vw;
+        /* margin-left: 50vw; */
+    }
+    .box-item-1{
+        
+        border-radius: 50%;
+    }
+}
+
+
+/*
+LANDSCAPE==================================================================================
+*/
+@media screen and (hover: none) and (pointer: coarse) and (orientation: landscape){
+    .header{
+        /* margin-top: 1.5vh;
+        margin-left: 1vw; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .adaptiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        width: 15vw;
+        height: auto;
+    }
+    .box-item-2{
+        margin-right: 1vw;
+    }
+    .box-item-1{
+        border-radius: 50%;
+    }
+}
